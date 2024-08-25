@@ -8,6 +8,9 @@ From [juanmirocks/Levenshtein-MySQL-UDF: General Levenshtein algorithm and k-bou
     - old version do `apt install libmariadb3 libmariadb-dev` instead of build [mariadb-corporation/mariadb-connector-c](https://github.com/mariadb-corporation/mariadb-connector-c) from source
 - [ ] run test case
 - [ ] Make more modules (string functions)
+- [ ] Windows built
+- [ ] php eloquent sample
+- [ ] go gorm sample
 
 ### Notes
 - **DO NOT COMPILE .SO IN PRODUCTION DATABASE. USE DOCKER / VMs THAT HAS SAME VERSION OF DB TO BUILD**

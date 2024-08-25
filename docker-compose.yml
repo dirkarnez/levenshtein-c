@@ -1,0 +1,28 @@
+services:
+
+  levenshtein_mariadb_lts:
+    build: 
+      context: ./
+      dockerfile: mariadb-lts.Dockerfile
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    user: root
+    volumes:
+      - .:/src/workspace
+      - ./build_output:/tmp/build_output
+  levenshtein_mariadb_10:
+    build: 
+      context: ./
+      dockerfile: mariadb-10.Dockerfile
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    user: root
+    volumes:
+      - .:/src/workspace
+      - ./build_output:/tmp/build_output
+# volumes:
+#   workspace:
+#     driver: local
+#   build_output: 
+#     driver: local
+  
